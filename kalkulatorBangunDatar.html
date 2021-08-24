@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pilihan = prompt("Pilih Bangun Persegi, Persegi Panjang, Belah Ketupat")
+        
+        if (pilihan == "Persegi") {
+            var s = prompt("Masukkan nilai sisi") 
+            document.write("sisi : ",s)
+            document.write("<br>")
+
+            var Luas = s*s
+            document.write ("Hasil Luas Persegi adalah : ",Luas)
+        } 
+
+        else if (pilihan =="Persegi Panjang"){
+        
+            var p = prompt("Masukkan nilai Panjang") 
+            document.write("panjang ;" ,p)
+            document.write("<br>")
+
+            var l = prompt("Masukkan nilai lebar") 
+            document.write("lebar : ",l)
+            document.write("<br>")
+
+            var Luas = p*l
+            document.write ("Hasil Luas Persegi Panjang adalah : ",Luas)
+        }
+        else if (pilihan =="Belah Ketupat"){
+           
+            var d1 = prompt("Masukkan nilai Diagonal 1") 
+            document.write("Diagonal 1 :" ,d1)
+            document.write("<br>") 
+
+            var d2 = prompt("Masukkan nilai Diagonal 2") 
+            document.write("Diagonal 2 :" ,d2)
+            document.write("<br>")
+
+            var Luas = d1*d2/2
+            document.write ("Hasil Luas Belah Ketupat adalah : ",Luas)
+        }
+    </script>
+</body>
+</html>
